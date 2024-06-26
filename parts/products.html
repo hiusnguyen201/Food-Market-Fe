@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/layout/logo.png" type="image/x-icon">
+    <!-- Embed Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <!-- Title -->
+    <title>Danh sách sản phẩm</title>
+    <!-- Embed Js -->
+    <script src="https://kit.fontawesome.com/1da38981ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/layout.js"></script>
+    <script src="../javascript/product.js"></script>
+</head>
+
+<body>
+    <div id="overlay" onclick="closeSlideNav()" class="overlay"></div>
+    <div id="header"></div>
+    <section class="hero-block d-flex align-items-center justify-content-center">
+        <div class="container">
+            <p class="hero-title text-center">Sản phẩm</p>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb justify-content-center align-items-center">
+                    <li class="breadcrumb-item me-2"><a href="/"><i class="fa-solid fa-house me-2"></i>Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Tất cả sản phẩm</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section class="products-block">
+        <div class="container">
+            <div class="row">
+                <aside class="col-3">
+                    <div class="aside-cate">
+                        <p class="aside-titles">DANH MỤC</p>
+                        <ul class="aside-list">
+                            <li class="aside-item"><a class="aside-link" href="#">Hạt giống</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Hải sản tươi</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Rau củ quả</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Sản phẩm bán chạy</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Thịt tươi sống</a></li>
+                            <li class="aside-item">
+                                <div class="aside-top">
+                                    <a class="aside-link" href="#">Trái cây</a>
+                                    <i id="asidePlusBtn" onclick="asideCateChangeBtn()" class="fa-solid fa-plus"></i>
+                                </div>
+                                <ul id="subaside-list" class="subproduct-list">
+                                    <li class="aside-item"><a class="aside-link" href="#">Chuối</a></li>
+                                    <li class="aside-item"><a class="aside-link" href="#">Táo</a></li>
+                                </ul>
+                            </li>
+                            <li class="aside-item"><a class="aside-link" href="#">Thực phẩm khô</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Thực phẩm tết</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Trứng và bơ</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Đồ uống</a></li>
+                            <li class="aside-item"><a class="aside-link" href="#">Đồ ăn đóng hộp</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="aside-filter">
+                        <p class="aside-titles">LỌC</p>
+                        <ul class="aside-list">
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('price')" class="aside-title price-title">Giá<i class="price-icon_minus aside-title__icon fa-solid fa-minus"></i></p>
+                                <ul class="filter-list price-list">
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price" checked>
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-solid fa-square-check"></i>Tất
+                                            cả</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>Giá dưới
+                                            100.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>100.000đ
+                                            - 200.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>200.000đ
+                                            - 300.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>300.000đ
+                                            - 500.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>500.000đ
+                                            - 1.000.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>1.000.000đ
+                                            - 2.000.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>2.000.000đ
+                                            - 3.000.000đ</label>
+                                    </li>
+                                    <li class="price-item">
+                                        <input class="filter-radio price-radio" type="radio" name="price">
+                                        <label onclick="asideRadioBtn('price')" for=""
+                                            class="filter-label price-label"><i
+                                                class="filter-checkbox price-checkbox fa-lg fa-regular fa-square"></i>Giá trên
+                                            3.000.000đ</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('brand')" class="aside-title brand-title">Thương hiệu<i class="brand-icon_minus aside-title__icon fa-solid fa-minus"></i>
+                                </p>
+                                <ul class="filter-list brand-list">
+                                    <li class="brand-item">
+                                        <input class="filter-radio brand-radio" type="checkbox" name="brand">
+                                        <label onclick="asideRadioBtn('brand')" for=""
+                                            class="filter-label brand-label"><i
+                                                class="filter-checkbox brand-checkbox fa-lg fa-regular fa-square"></i>Việt
+                                            Nam</label>
+                                    </li>
+                                    <li class="brand-item">
+                                        <input class="filter-radio brand-radio" type="checkbox" name="brand">
+                                        <label onclick="asideRadioBtn('brand')" for=""
+                                            class="filter-label brand-label"><i
+                                                class="filter-checkbox brand-checkbox fa-lg fa-regular fa-square"></i>China</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('weight')" class="aside-title weight-title">Trọng lượng<i class="weight-icon_minus aside-title__icon fa-solid fa-minus"></i>
+                                </p>
+                                <ul class="filter-list weight-list ">
+                                    <li class="weight-item">
+                                        <input class="filter-radio weight-radio" type="checkbox" name="weight">
+                                        <label onclick="asideRadioBtn('weight')" for=""
+                                            class="filter-label weight-label"><i
+                                                class="filter-checkbox weight-checkbox fa-lg fa-regular fa-square"></i>1kg</label>
+                                    </li>
+                                    <li class="weight-item">
+                                        <input class="filter-radio weight-radio" type="checkbox" name="weight">
+                                        <label onclick="asideRadioBtn('weight')" for=""
+                                            class="filter-label weight-label"><i
+                                                class="filter-checkbox weight-checkbox fa-lg fa-regular fa-square"></i>2kg</label>
+                                    </li>
+                                    <li class="weight-item">
+                                        <input class="filter-radio weight-radio" type="checkbox" name="weight">
+                                        <label onclick="asideRadioBtn('weight')" for=""
+                                            class="filter-label weight-label"><i
+                                                class="filter-checkbox weight-checkbox fa-lg fa-regular fa-square"></i>3kg</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('quantity')" class="aside-title quantity-title">Số lượng<i class="quantity-icon_minus aside-title__icon fa-solid fa-minus"></i></p>
+                                <ul class="filter-list quantity-list ">
+                                    <li class="quantity-item">
+                                        <input class="filter-radio quantity-radio" type="checkbox" name="quantity">
+                                        <label onclick="asideRadioBtn('quantity')" for=""
+                                            class="filter-label quantity-label"><i
+                                                class="filter-checkbox quantity-checkbox fa-lg fa-regular fa-square"></i>10
+                                            quả</label>
+                                    </li>
+                                    <li class="quantity-item">
+                                        <input class="filter-radio quantity-radio" type="checkbox" name="quantity">
+                                        <label onclick="asideRadioBtn('quantity')" for=""
+                                            class="filter-label quantity-label"><i
+                                                class="filter-checkbox quantity-checkbox fa-lg fa-regular fa-square"></i>20
+                                            quả</label>
+                                    </li>
+                                    <li class="quantity-item">
+                                        <input class="filter-radio quantity-radio" type="checkbox" name="quantity">
+                                        <label onclick="asideRadioBtn('quantity')" for=""
+                                            class="filter-label quantity-label"><i
+                                                class="filter-checkbox quantity-checkbox fa-lg fa-regular fa-square"></i>30
+                                            quả</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('discount')" class="aside-title discount-title">Khuyễn mãi - Ưu đãi<i
+                                        class="discount-icon_minus aside-title__icon fa-solid fa-minus"></i></p>
+                                <ul class="filter-list discount-list ">
+                                    <li class="discount-item">
+                                        <input class="filter-radio discount-radio" type="checkbox" name="discount">
+                                        <label onclick="asideRadioBtn('discount')" for=""
+                                            class="filter-label discount-label"><i
+                                                class="filter-checkbox discount-checkbox fa-lg fa-regular fa-square"></i>Khuyễn
+                                            mãi - Ưu đãi</label>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="aside-item filter-item">
+                                <p onclick="asideFilterChangeBtn('property')" class="aside-title property-title">Thuộc tính<i class="property-icon_minus aside-title__icon fa-solid fa-minus"></i></p>
+                                <ul class="filter-list property-list ">
+                                    <li class="property-item">
+                                        <input class="filter-radio property-radio" type="checkbox" name="property">
+                                        <label onclick="asideRadioBtn('property')" for=""
+                                            class="filter-label property-label"><i
+                                                class="filter-checkbox property-checkbox fa-lg fa-regular fa-square"></i>Thuộc
+                                            tính 1</label>
+                                    </li>
+                                    <li class="property-item">
+                                        <input class="filter-radio property-radio" type="checkbox" name="property">
+                                        <label onclick="asideRadioBtn('property')" for=""
+                                            class="filter-label property-label"><i
+                                                class="filter-checkbox property-checkbox fa-lg fa-regular fa-square"></i>Thuộc
+                                            tính 2</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <section class="col-9 main-content">
+                    <div class="sort-type_block">
+                        <h3 class="sort-title"><i class="fa-solid fa-arrow-down-a-z"></i>Sắp xếp theo</h3>
+                        <ul id="sort-list" class="sort-list">
+                            <li class="sort-item active">
+                                <input type="radio" name="quick-sort" class="btn-quick-sort" checked>
+                                <label for="" onclick="sortRadioBtn()" class="sort-label active"><i
+                                        class="radio-icon fa-regular fa-circle-dot"></i>Mặc định</label>
+                            </li>
+                            <li class="sort-item">
+                                <input type="radio" name="quick-sort" class="btn-quick-sort">
+                                <label for="" onclick="sortRadioBtn()" class="sort-label"><i
+                                        class="radio-icon fa-regular fa-circle"></i>Tên (A - Z)</label>
+                            </li>
+                            <li class="sort-item">
+                                <input type="radio" name="quick-sort" class="btn-quick-sort">
+                                <label for="" onclick="sortRadioBtn()" class="sort-label"><i
+                                        class="radio-icon fa-regular fa-circle"></i>Tên (Z - A)</label>
+                            </li>
+                            <li class="sort-item">
+                                <input type="radio" name="quick-sort" class="btn-quick-sort">
+                                <label for="" onclick="sortRadioBtn()" class="sort-label"><i
+                                        class="radio-icon fa-regular fa-circle"></i>Giá (Thấp > Cao)</label>
+                            </li>
+                            <li class="sort-item">
+                                <input type="radio" name="quick-sort" class="btn-quick-sort">
+                                <label for="" onclick="sortRadioBtn()" class="sort-label"><i
+                                        class="radio-icon fa-regular fa-circle"></i>Giá (Cao > Thấp)</label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <hr>
+
+                    <div class="product-list">
+                        <!-- Product 1 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp24-480x480.jpg" class="card-thumbnail"
+                                        alt="Bánh mì gối"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì gối</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">20,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 2 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-60%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp22-480x480.jpg" class="card-thumbnail"
+                                        alt="Ổi lê ruột đỏ"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Ổi lê ruột đỏ</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">20,000đ</span>
+                                    <span class="product-old_price">50,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 3 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-7%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp5-480x480.jpg" class="card-thumbnail"
+                                        alt="Trái cam mật"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trái cam mật</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">128,000đ</span>
+                                    <span class="product-old_price">138,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 4 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-21%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp6-480x480.jpg" class="card-thumbnail"
+                                        alt="Chanh tươi vỏ xanh"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Chanh tươi vỏ xanh</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">30,000đ</span>
+                                    <span class="product-old_price">38,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 5 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-42%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp3-480x480.jpg" class="card-thumbnail"
+                                        alt="Dâu tây"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Dâu tây</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">138,000đ</span>
+                                    <span class="product-old_price">238,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 6 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-41%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp2-480x480.jpg" class="card-thumbnail"
+                                        alt="Đào đỏ Mỹ"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Đào đỏ Mỹ</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">40,000đ</span>
+                                    <span class="product-old_price">68,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 7 -->
+                        <div class="product-item card">
+                            <div class="sale-label">
+                                <span>-33%</span>
+                            </div>
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp10-480x480.jpg" class="card-thumbnail"
+                                        alt="Cá hồi"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Cá hồi</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">200,000đ</span>
+                                    <span class="product-old_price">300,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 8 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp29-480x480.jpg" class="card-thumbnail"
+                                        alt="Trứng gà"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng gà</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">30,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 9 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg" class="card-thumbnail"
+                                        alt="Bơ nấu ăn"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu ăn</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">Liên hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 10 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg" class="card-thumbnail"
+                                        alt="Bánh mì đen"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì đen</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">20,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 11 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp7-480x480.jpg" class="card-thumbnail"
+                                        alt="Hành tây"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Hành tây</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">Liên hệ</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Product 12 -->
+                        <div class="product-item card">
+                            <div class="card-img-top">
+                                <a href="../parts/product-details.html"><img src="../images/products/sp20-480x480.jpg" class="card-thumbnail"
+                                        alt="Cà chua"></a>
+                                <div class="product-actions">
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                    <a href="#" class="product-action_link"><i
+                                            class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Cà chua</a></h5>
+                                <div class="product-price">
+                                    <span class="card-price">15,000đ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav class="d-flex justify-content-center" aria-label="Page navigation">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#"><i class="fa-solid fa-angle-right"></i></a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                    <i class="fa-solid fa-angles-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </section>
+            </div>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+
+</html>

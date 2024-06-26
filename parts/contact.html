@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/layout/logo.png" type="image/x-icon">
+    <!-- Embed Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <!-- Title -->
+    <title>Liên Hệ</title>
+    <!-- Embed Js -->
+    <script src="https://kit.fontawesome.com/1da38981ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/layout.js"></script>
+</head>
+
+<body>
+    <div id="overlay" onclick="closeSlideNav()" class="overlay"></div>
+    <div id="header"></div>
+    <section class="hero-block d-flex align-items-center justify-content-center">
+        <div class="container">
+            <p class="hero-title text-center">Liên hệ với chúng tôi</p>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb justify-content-center align-items-center">
+                    <li class="breadcrumb-item me-2"><a href="/"><i class="fa-solid fa-house me-2"></i>Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Liên hệ với chúng tôi</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="contact-block">
+        <div class="container d-flex flex-column">
+            <div class="row contact-top_block">
+                <div class="col-12">
+                    <iframe class="map-embed"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.1405835393266!2d105.85115797614195!3d21.027060187835307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abeb3ba155db%3A0xcc71e76697a5f3df!2zNzUgUC4gxJBpbmggVGnDqm4gSG_DoG5nLCBUcsOgbmcgVGnhu4FuLCBIb8OgbiBLaeG6v20sIEjDoCBO4buZaSwgVmlldG5hbQ!5e0!3m2!1sen!2s!4v1697417709556!5m2!1sen!2s"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <form action="" class="row contact-bottom_block">
+                <div class="col-4">
+                    <h3 class="contact-title">Thông tin liên hệ</h3>
+                    <p class="contact-desc text-body-tertiary">Website thương mại điện tử S.Fresh do S Group là đơn vị
+                        chủ quản, chịu trách nhiệm và thực hiện các giao dịch liên quan mua sắm sản phẩm hàng hoá tiêu
+                        dùng thiết yếu.</p>
+                    <div class="contact-box">
+                        <p class="contact-details"><b>Địa chỉ: </b><a href="#" class="text-body-tertiary">A12, Đinh Tiên
+                                Hoàng, Q. Hoàn Kiếm, Hà Nội</a></p>
+                        <p class="contact-details"><b>Điện thoại: </b><a href="#" class="text-body-tertiary">0123 456
+                                789</a></p>
+                        <p class="contact-details"><b>Email: </b><a href="#"
+                                class="text-body-tertiary">contact@yourdomain.com</a></p>
+                    </div>
+                </div>
+                <div class="col-8 contact-right_block">
+                    <div class="row">
+                        <div class="col">
+                            <label class="contact-label" for="">Tên:</label>
+                            <input type="text" name="name" placeholder="Tên" class="form-control" required>
+                        </div>
+                        <div class="col">
+                            <label class="contact-label" for="">Email:</label>
+                            <input type="text" name="name" placeholder="Email" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label class="contact-label" for="">Điện thoại:</label>
+                            <input type="text" name="name" placeholder="Điện thoại" class="form-control" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="Nội Dung:">
+                                <label class="contact-label" for="">Nội Dung:</label>
+                                <textarea name="content" cols="30" rows="5" class="form-control content-block"
+                                    placeholder="Nội Dung"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-dark contact-btn">GỬI TIN NHẮN</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="footer"></div>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<div class="container">
+  <div class="header-content row">
+    <nav id="navbar" class="navbar navbar-expand-lg col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12 header-left">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="account-block">
+            <a href="#" class="account-link">Đăng nhập</a>
+            <a href="#" class="account-link">Đăng ký</a>
+            <i onclick="closeSlideNav()" class="fa-regular fa-circle-xmark close-btn"></i>
+          </div>
+
+          <ul class="navbar-nav">
+            <li class="nav-item pe-3">
+              <a class="nav-link" aria-current="page" href="/">Trang chủ</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="../parts/introduce.html">Giới thiệu</a>
+            </li>
+            <li onmouseleave="removeColor()" class="nav-item dropdown-hover position-relative pe-3">
+              <div class="dropdown-block d-flex align-items-center justify-content-between">
+                <a id="product-btn" onmouseenter="addColor()" class="nav-link dropdown product-btn" href="../parts/products.html" role="button">
+                  Sản phẩm 
+                </a>
+                <i onclick="openProductMenu()" class="fa-solid fa-caret-right sort-icon"></i>
+              </div>
+              <ul id="product-menu" onmouseleave="removeColor()" class="dropdown-menu p-0 position-absolute product-menu">
+                <li class="dropdown-item"><a class="product-link" href="#">Hạt giống</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Hải sản tươi</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Rau củ quả</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Sản phẩm bán chạy</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Thịt tươi sống</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Thực phẩm tết</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Thực phẩm khô</a></li>
+                <li onmouseleave="removeSubColor()" class="dropdown-item dropdown-split position-relative">
+                  <a onmouseenter="addSubColor()" id="type-btn" class="d-flex align-items-center justify-content-between product-link type-btn" href="#">Trái cây
+                    <i onclick="openTypeProduct()" class="fa-solid fa-caret-right right-icon"></i>
+                  </a>
+                  <ul onmouseleave="removeSubColor()" id="type-list" class="dropdown-menu product-type_menu type-list">
+                    <li class="dropdown-item"><a class="product-link" href="#">Chuối</a></li>
+                    <li class="dropdown-item"><a class="product-link" href="#">Táo</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-item"><a class="product-link" href="#">Trứng và bơ</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Đồ ăn đóng hộp</a></li>
+                <li class="dropdown-item"><a class="product-link" href="#">Đồ uống</a></li>
+              </ul>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="../parts/news.html">Tin tức</a>
+            </li>
+            <li class="nav-item pe-3">
+              <a class="nav-link" href="../parts/contact.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="logo-block col-xl-2 col-lg-3 col-md-3">
+      <a class="navbar-brand d-flex align-items-center justify-content-center m-0" href="/">
+        <img width="186px" src="../images/layout/logo.png" alt="logo">
+      </a>
+    </div>
+
+    <div class="d-flex align-items-center px-4 col-xl-5 col-lg-9 col-md-9 col-sm-12 col-12 header-right justify-content-end">
+      <form class="d-flex align-items-center justify-content-end me-4 form-block" role="search">
+        <input class="form-value" type="text" placeholder="Tìm kiếm">
+        <div class="search-icon position-absolute">
+          <button class="btn btn-default btn-search" type="submit">
+            <svg fill="#fff" width="20px" height="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z" />
+            </svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="action-block d-flex align-items-center gap-30">
+        <div width="25px" height="25px" class="heart-block position-relative">
+          <a href="#">
+            <i class="fa-regular fa-heart fa-xl text-white"></i>
+            <span class="action-status">0</span>
+          </a>
+        </div>
+        <div width="25px" height="25px" class="cart-block position-relative">
+          <a href="#">
+            <i class="fa-solid fa-cart-shopping fa-xl text-white"></i>
+            <span class="action-status">0</span>
+          </a>
+        </div>
+        <div width="25px" height="25px" class="user-block position-relative">
+          <a href="#">
+            <i class="fa-regular fa-circle-user fa-xl text-white"></i>
+          </a>
+          <div class="controls-block position-absolute">
+            <ul class="dropdown-menu p-0 m-0">
+              <div class="triangle"></div>
+              <li class="dropdown-item text-center"><a class="text-black user-link" href="#">Đăng nhập</a></li>
+              <li class="dropdown-item text-center"><a class="text-black user-link" href="#">Đăng ký</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <button id="cate-btn" onclick="openSlideNav()" width="25px" height="25px" class="navbar-toggler cate-btn" type="button">
+          <i class="fa-solid fa-bars fa-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

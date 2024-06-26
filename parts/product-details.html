@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../images/layout/logo.png" type="image/x-icon">
+    <!-- Embed Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/products.css">
+    <link rel="stylesheet" href="../css/product-details.css">
+    <!-- Title -->
+    <title>Chi tiết sản phẩm</title>
+    <!-- Embed Js -->
+    <script src="https://kit.fontawesome.com/1da38981ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/layout.js"></script>
+    <script src="../javascript/product-details.js"></script>
+</head>
+<body>
+    <div id="overlay" onclick="closeSlideNav()" class="overlay"></div>
+    <div id="header"></div>
+
+    <section class="hero-block d-flex align-items-center justify-content-center">
+        <div class="container">
+            <p class="hero-title text-center">Trái cam mật</p>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb justify-content-center align-items-center">
+                    <li class="breadcrumb-item me-2"><a href="/"><i class="fa-solid fa-house me-2"></i>Trang chủ</a>
+                    </li>
+                    <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="product-details_block">
+            <div class="row product-content_top">
+                <!-- Column 1 -->
+                <div class="col-5">
+                    <div class="swipper-wrapper">
+                        <div class="swipper-top">
+                            <i class="fa-solid fa-chevron-up fa-xl"></i>
+                            <a href="#"><img class="swipper-lazy" src="../images/products/sp5-480x480.jpg" alt="Trái cam mật"></a>
+                        </div>
+                        <i class="fa-solid fa-chevron-down fa-xl"></i>
+                    </div>
+                    <a href="#"><img class="swipper-img_block" width="437px" height="437px" src="../images/products/sp5-480x480.jpg" alt="Trái cam mật"></a>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-4">
+                    <h1 class="product-name">Trái cam mật</h1>
+                    <span class="product-code">Mã sản phẩm: <b>TR7183</b></span>
+                    <div class="prices-block">
+                        <span class="curr-price">128,000đ</span>
+                        <span class="pre-price"> 138,000đ</span>
+                    </div>
+                    <span class="save-price">Tiết kiệm: <b>-7%</b> so với giá thị trường</span>
+                    <p class="product-desc">Cam (danh pháp hai phần: Citrus × sinensis) là loài cây ăn quả cùng họ với bưởi.</p>
+                    <form action="" class="product-form">
+                        <label class="product-quantity" for="">Số lượng:</label>
+                        <div class="product-row col-6">
+                            <div class="custom-btn">
+                                <div class="btn-icon">
+                                    <i onclick="DecreaseQuantityProduct()" class="fa-solid fa-minus fa-xs ms-1"></i>
+                                </div>
+                                <div class="input-number">
+                                    <input type="number" name="quantity" value="1">
+                                </div>
+                                <div class="btn-icon">
+                                    <i onclick="IncreaseQuantityProduct()" class="fa-solid fa-plus fa-xs me-1"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-danger">MUA NGAY</button>
+                        </div>
+                        <button class="btn btn-success col-6">THÊM VÀO GIỎ</button>
+                    </form>
+                </div>
+
+                <!-- Column 3 -->
+                <div class="col-3">
+                    <ul class="service-product">
+                        <li class="service-item">
+                            <img src="../images/product-details/service_1-0x0.png" alt="100% tự nhiên">
+                            <span>100% tự nhiên</span>
+                        </li>
+                        <li class="service-item">
+                            <img src="../images/product-details/service_2-0x0.png" alt="Chứng nhận ATTP">
+                            <span>Chứng nhận ATTP</span>
+                        </li>
+                        <li class="service-item">
+                            <img src="../images/product-details/service_3-0x0.png" alt="Luôn luôn tươi mới">
+                            <span>Luôn luôn tươi mới</span>
+                        </li>
+                        <li class="service-item">
+                            <img src="../images/product-details/service_4-0x0.png" alt="An toàn cho sức khoẻ">
+                            <span>An toàn cho sức khoẻ</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="product-desc_block">
+                    <span class="product-desc_link">Mô tả</span>
+                </div>
+                <p class="product-desc">Cam (danh pháp hai phần: Citrus × sinensis) là loài cây ăn quả cùng họ với bưởi. Nó có quả nhỏ hơn quả bưởi, vỏ mỏng, khi chín thường có màu da cam, có vị ngọt hoặc hơi chua. Loài cam là một cây lai được trồng từ xưa, có thể lai giống giữa loài bưởi (Citrus maxima) và quýt (Citrus reticulata). Đây là cây nhỏ, cao đến khoảng 10 m, có cành gai và lá thường xanh dài khoảng 4-10 cm. Cam bắt nguồn từ Đông Nam Á, có thể từ Ấn Độ, Việt Nam hay miền nam Trung Quốc </p>
+            </div>
+
+            <div class="product-recentview">
+                <span class="product-recentview_title">Sản phẩm đã xem</span>
+                <div class="recentview-list">
+                    <!-- Product 1 -->
+                    <div class="product-item card">
+                        <div class="recentview-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp24-480x480.jpg" class="card-thumbnail"
+                                    alt="Bánh mì gối"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì gối</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="product-item card">
+                        <div class="sale-label">
+                            <span>-60%</span>
+                        </div>
+                        <div class="recentview-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp22-480x480.jpg" class="card-thumbnail"
+                                    alt="Ổi lê ruột đỏ"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Ổi lê ruột đỏ</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                                <span class="product-old_price">50,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="product-item card">
+                        <div class="sale-label">
+                            <span>-7%</span>
+                        </div>
+                        <div class="recentview-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp5-480x480.jpg" class="card-thumbnail"
+                                    alt="Trái cam mật"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trái cam mật</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">128,000đ</span>
+                                <span class="product-old_price">138,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 4 -->
+                    <div class="product-item card">
+                        <div class="recentview-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg" class="card-thumbnail"
+                                    alt="Bánh mì đen"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì đen</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 5 -->
+                    <div class="product-item card">
+                        <div class="recentview-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg" class="card-thumbnail"
+                                    alt="Bơ nấu ăn"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu ăn</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>

@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/layout/logo.png" type="image/x-icon">
+    <!-- Embed Css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/products.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <!-- Title -->
+    <title>S.Fresh</title>
+    <!-- Embed Js -->
+    <script src="https://kit.fontawesome.com/1da38981ec.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./javascript/layout.js"></script>
+    <script src="./javascript/home.js"></script>
+</head>
+
+<body>
+    <div id="overlay" onclick="closeSlideNav()" class="overlay"></div>
+    <div id="header"></div>
+
+    <div class="hero-home_block">
+        <a href="#"><img src="./images/hero/slider_1-1650x540.png" alt="slider"></a>
+    </div>
+
+    <div class="container">
+        <section class="cate-list">
+            <!-- Item 1 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_5-150x150.jpg" alt="Rau củ quả">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Rau củ quả</a></h3>
+            </div>
+
+            <!-- Item 2 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_3-150x150.jpg" alt="Thịt tươi sống">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Thịt tươi sống</a></h3>
+            </div>
+
+            <!-- Item 3 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_2-150x150.png" alt="Thực phẩm khô">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Thực phẩm khô</a></h3>
+            </div>
+
+            <!-- Item 4 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_4-150x150.jpg" alt="Trái cây">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Trái cây</a></h3>
+            </div>
+
+            <!-- Item 5 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_1-150x150.png" alt="Trứng và bơ">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Trứng và bơ</a></h3>
+            </div>
+
+            <!-- Item 6 -->
+            <div class="cate-item">
+                <a href="#">
+                    <img class="cate-item_thumbnail" src="./images/home/cate_6-150x150.jpg" alt="Đồ uống">
+                </a>
+                <h3 class="cate-item_title"><a href="#">Đồ uống</a></h3>
+            </div>
+        </section>
+
+        <section class="product-lastest">
+            <h2 class="product-lastest_title"><a href="#"><i class="fa-solid fa-fire me-3"></i>Ưu đãi trong tuần</a>
+            </h2>
+            <div class="product-lastest_list swipper-list">
+                <!-- Product 1 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp24-480x480.jpg"
+                                class="card-thumbnail" alt="Bánh mì gối"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì gối</a>
+                        </h5>
+                        <div class="product-price">
+                            <span class="card-price">20,000đ</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-60%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp22-480x480.jpg"
+                                class="card-thumbnail" alt="Ổi lê ruột đỏ"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Ổi lê ruột
+                                đỏ</a></h5>
+                        <div class="product-price">
+                            <span class="card-price">20,000đ</span>
+                            <span class="product-old_price">50,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-7%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp5-480x480.jpg"
+                                class="card-thumbnail" alt="Trái cam mật"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trái cam
+                                mật</a></h5>
+                        <div class="product-price">
+                            <span class="card-price">128,000đ</span>
+                            <span class="product-old_price">138,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-21%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp6-480x480.jpg"
+                                class="card-thumbnail" alt="Chanh tươi vỏ xanh"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Chanh tươi vỏ
+                                xanh</a></h5>
+                        <div class="product-price">
+                            <span class="card-price">30,000đ</span>
+                            <span class="product-old_price">38,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-42%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp3-480x480.jpg"
+                                class="card-thumbnail" alt="Dâu tây"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Dâu tây</a>
+                        </h5>
+                        <div class="product-price">
+                            <span class="card-price">138,000đ</span>
+                            <span class="product-old_price">238,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 6 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-41%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp2-480x480.jpg"
+                                class="card-thumbnail" alt="Đào đỏ Mỹ"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Đào đỏ Mỹ</a>
+                        </h5>
+                        <div class="product-price">
+                            <span class="card-price">40,000đ</span>
+                            <span class="product-old_price">68,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 7 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="sale-label">
+                        <span>-33%</span>
+                    </div>
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp10-480x480.jpg"
+                                class="card-thumbnail" alt="Cá hồi"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Cá hồi</a>
+                        </h5>
+                        <div class="product-price">
+                            <span class="card-price">200,000đ</span>
+                            <span class="product-old_price">300,000đ</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 8 -->
+                <div class="product-item card product-lastest_item">
+                    <div class="card-img-top">
+                        <a href="../parts/product-details.html"><img draggable="false" src="../images/products/sp29-480x480.jpg"
+                                class="card-thumbnail" alt="Trứng gà"></a>
+                        <div class="product-actions">
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                            <a href="#" class="product-action_link"><i
+                                    class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng gà</a>
+                        </h5>
+                        <div class="product-price">
+                            <span class="card-price">30,000đ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="product-banner_list">
+            <a href="#"><img src="./images/home/banner_1-0x0.jpg" alt=""></a>
+            <a href="#"><img src="./images/home/banner_2-0x0.jpg" alt=""></a>
+        </div>
+
+        <section class="row cate-type_block">
+            <div class="col-3">
+                <div class="fruit-type_block">
+                    <h2 class="cate-type_title"><a href="#">Trái cây</a></h2>
+                    <ul class="cate-type_list">
+                        <li class="cate-type_item">
+                            <a href="#">Chuối</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Chuối 2</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Trái cây</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Táo</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="shopping-btn">Mua sắm ngay bây giờ!</a>
+                </div>
+            </div>
+
+            <div class="col-9">
+                <div class="product-list cate-type_product_list">
+                    <!-- Product 1 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp29-480x480.jpg"
+                                    class="card-thumbnail" alt="Trứng gà"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng
+                                    gà</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">30,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg"
+                                    class="card-thumbnail" alt="Bơ nấu ăn"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu
+                                    ăn</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg"
+                                    class="card-thumbnail" alt="Bánh mì đen"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì
+                                    đen</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp7-480x480.jpg"
+                                    class="card-thumbnail" alt="Hành tây"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Hành
+                                    tây</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row cate-type_block">
+            <div class="col-9">
+                <div class="product-list cate-type_product_list">
+                    <!-- Product 1 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp29-480x480.jpg"
+                                    class="card-thumbnail" alt="Trứng gà"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng
+                                    gà</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">30,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg"
+                                    class="card-thumbnail" alt="Bơ nấu ăn"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu
+                                    ăn</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg"
+                                    class="card-thumbnail" alt="Bánh mì đen"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì
+                                    đen</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp7-480x480.jpg"
+                                    class="card-thumbnail" alt="Hành tây"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Hành
+                                    tây</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="veget-type_block">
+                    <h2 class="cate-type_title"><a href="#">Rau củ quả</a></h2>
+                    <ul class="cate-type_list">
+                        <li class="cate-type_item">
+                            <a href="#">Chuối</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Táo</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="shopping-btn">Mua sắm ngay bây giờ!</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="row cate-type_block">
+            <div class="col-3">
+                <div class="food-type_block">
+                    <h2 class="cate-type_title"><a href="#">Thực phẩm tươi</a></h2>
+                    <ul class="cate-type_list">
+                        <li class="cate-type_item">
+                            <a href="#">Chuối</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Hải sản tươi</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Rau củ quả</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Thịt tươi sống</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Trái cây</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="shopping-btn">Mua sắm ngay bây giờ!</a>
+                </div>
+            </div>
+            
+            <div class="col-9">
+                <div class="product-list cate-type_product_list">
+                    <!-- Product 1 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp29-480x480.jpg"
+                                    class="card-thumbnail" alt="Trứng gà"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng
+                                    gà</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">30,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg"
+                                    class="card-thumbnail" alt="Bơ nấu ăn"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu
+                                    ăn</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg"
+                                    class="card-thumbnail" alt="Bánh mì đen"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì
+                                    đen</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp7-480x480.jpg"
+                                    class="card-thumbnail" alt="Hành tây"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Hành
+                                    tây</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="delivery-express">
+            <h2 class="delivery-express_title">Giao hàng miễn phí tận nhà trong vòng 24h</h2>
+            <a href="#" class="delivery-express-btn-more">Tìm hiểu thêm</a>
+        </div>
+
+        <section class="blog-section">
+            <h2 class="blog-title"><a href="#">Tin tức mới nhất</a></h2>
+
+            <div class="blog-list">
+                <!-- Item 1 -->
+                <div class="blog-item">
+                    <a href="#"><img class="blog-thumbnail" src="./images//home/t4-480x480.jpg" alt=""></a>
+                    <div class="blog-content">
+                        <h3 class="blog-content_title"><a href="#">Đi chợ online: Xu hướng lên ngôi mùa dịch Covid-19</a></h3>
+                        <div class="time-post">
+                            <span class="poster"><i class="fa-solid fa-user me-2"></i>John Doe</span>
+                            <span>|</span>
+                            <span class="timer">30/06/2022</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="blog-item">
+                    <a href="#"><img class="blog-thumbnail" src="./images//home/t5-480x480.jpg" alt=""></a>
+                    <div class="blog-content">
+                        <h3 class="blog-content_title"><a href="#">Cách chọn rau củ quả sạch tươi ngon, không ngâm độc</a></h3>
+                        <div class="time-post">
+                            <span class="poster"><i class="fa-solid fa-user me-2"></i>John Doe</span>
+                            <span>|</span>
+                            <span class="timer">30/06/2022</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 3 -->
+                <div class="blog-item">
+                    <a href="#"><img class="blog-thumbnail" src="./images//home/t6-480x480.jpg" alt=""></a>
+                    <div class="blog-content">
+                        <h3 class="blog-content_title"><a href="#">Các loại ngũ cốc tốt cho sức khỏe</a></h3>
+                        <div class="time-post">
+                            <span class="poster"><i class="fa-solid fa-user me-2"></i>John Doe</span>
+                            <span>|</span>
+                            <span class="timer">30/06/2022</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 4 -->
+                <div class="blog-item">
+                    <a href="#"><img class="blog-thumbnail" src="./images//home/t1-480x480.jpg" alt=""></a>
+                    <div class="blog-content">
+                        <h3 class="blog-content_title"><a href="#">Các cách chế biến món ăn từ rau xanh</a></h3>
+                        <div class="time-post">
+                            <span class="poster"><i class="fa-solid fa-user me-2"></i>John Doe</span>
+                            <span>|</span>
+                            <span class="timer">30/06/2022</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="row cate-type_block">
+            <div class="col-9">
+                <div class="product-list cate-type_product_list">
+                    <!-- Product 1 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp29-480x480.jpg"
+                                    class="card-thumbnail" alt="Trứng gà"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Trứng
+                                    gà</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">30,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp32-480x480.jpg"
+                                    class="card-thumbnail" alt="Bơ nấu ăn"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bơ nấu
+                                    ăn</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp33-480x480.jpg"
+                                    class="card-thumbnail" alt="Bánh mì đen"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Bánh mì
+                                    đen</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">20,000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="product-item card">
+                        <div class="card-img-top">
+                            <a href="../parts/product-details.html"><img src="../images/products/sp7-480x480.jpg"
+                                    class="card-thumbnail" alt="Hành tây"></a>
+                            <div class="product-actions">
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_heart fa-regular fa-heart fa-xl"></i></a>
+                                <a href="#" class="product-action_link"><i
+                                        class="product-icon product-icon_gear fa-solid fa-gear fa-xl"></i></a>
+                            </div>
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><a href="../parts/product-details.html" class="card-link">Hành
+                                    tây</a></h5>
+                            <div class="product-price">
+                                <span class="card-price">Liên hệ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-3">
+                <div class="veget-type_block">
+                    <h2 class="cate-type_title"><a href="#">Rau củ quả</a></h2>
+                    <ul class="cate-type_list">
+                        <li class="cate-type_item">
+                            <a href="#">Chuối</a>
+                        </li>
+                        <li class="cate-type_item">
+                            <a href="#">Táo</a>
+                        </li>
+                    </ul>
+                    <a href="#" class="shopping-btn">Mua sắm ngay bây giờ!</a>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
